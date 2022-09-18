@@ -52,7 +52,7 @@ const handleMouseMove = (event)=>{
 	input.mouseY.fraction = (input.mouseY.current-input.mouseY.start)/input.mouseY.range;
 
 	// output x
-	output.x.current = output.x.end - (input.mouseX.fraction*output.x.range);
+	output.x.current = output.x.start + (input.mouseX.fraction*output.x.range);
 
 	// output y
 	output.y.current = output.y.start + (input.mouseY.fraction*output.y.range);
